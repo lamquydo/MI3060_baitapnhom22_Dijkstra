@@ -1,2 +1,6 @@
-# MI3060_baitapnhom22_Dijkstra
-Bài tập nhóm 22/ Chủ đề ứng dụng tìm đường đi ngắn nhất (Bản đồ) xây dựng hệ thống dẫn đường trong khuôn viên trường học
+# MI3060-Baitapnhom22-Dijkstra
+Bài tập nhóm mô tả hệ thống dẫn đường trường học cho học sinh,sinh viên và giảng viên, sử dụng thuật toán dijkstra
+
+## Danh sách thành viên
+Họ và tên|MSSV| 
+---|---
