@@ -26,6 +26,6 @@ Lê Thành Trung|202419004
 - [ ] 5. Kiểm thử sản phẩm
 - [ ] 6. Làm báo cáo, slide, video
 
-## Liên hệ
-Mọi thắc mắc hoặc góp ý chuyên môn, vui lòng gửi lại chúng tôi qua mail sau:
+## Contact
+For any inquiries or professtional feedback, please reach out to us:
 **Email** [do.lq2418868@sis.hust.edu.vn]
