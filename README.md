@@ -30,9 +30,9 @@ Lê Thành Trung|202419004
   - [ ] 3.2 Xây dựng module vào ra( loadData() và saveData() ): Thành viên 1
   - [ ] 3.3 Xây dựng modulde DijkstraSolver và đánh giá độ phức tạp: Thành viên 2
 - [ ] 4. Cài đặt giao diện : Thành viên 3
- - [ ] 4.1 Xây dựng module hiển thị giao diện 
- - [ ] 4.2 Xây dựng module nhận input từ các nút bấm 
- - [ ] 4.3 Xây dựng module hiển thị kết quả là tổng khoảng cách và cách đi
+   - [ ] 4.1 Xây dựng module hiển thị giao diện 
+   - [ ] 4.2 Xây dựng module nhận input từ các nút bấm 
+   - [ ] 4.3 Xây dựng module hiển thị kết quả là tổng khoảng cách và cách đi
 - [ ] 5. Kiểm thử sản phẩm : Thành viên 4
   - [ ] 5.1 Kiểm thử thuật toán (White-box, boundary, negative)
   - [ ] 5.2 Kiểm thử hiệu năng( Time, Space, Stress test) 
