@@ -17,7 +17,7 @@ Lê Thành Trung|202419004
 - Sử dụng thuật toán Dijkstra
 
 ## Danh sách nhiệm vụ cần làm
-- [ ] 1. Vẽ class diagram
+- [ ] 1. Phân tích hệ thống( nhóm trưởng làm )
 - [ ] 2. Chuẩn bị dữ liệu
   - [ ] Lập sơ đồ địa điểm và ước lượng khoảng cách thực tế
   - [ ] Tạo file graph.txt để lưu thông tin đồ thị
