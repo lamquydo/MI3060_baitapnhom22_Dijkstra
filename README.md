@@ -1,6 +1,10 @@
 # MI3060-Baitapnhom22-Dijkstra
 Bài tập nhóm mô tả hệ thống dẫn đường trường học cho học sinh,sinh viên và giảng viên, sử dụng thuật toán dijkstra
 
+## Phạm vi hệ thống
+- Hệ thống tìm đường áp dụng cho Đại Học Bách Hà Nội
+- Đối tượng sử dụng: Sinh viên, giảng viên cảu trường và đối tượng có khả năng sử dụng công nghệ
+
 ## Danh sách thành viên
 
 Họ và tên|MSSV| 
