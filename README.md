@@ -21,14 +21,20 @@ Lê Thành Trung|202419004
 - Sử dụng thuật toán Dijkstra
 
 ## Danh sách nhiệm vụ cần làm
-- [x] 1. Phân tích hệ thống và xây dựng cấu trúc dữ liệu
+- [x] 1. Phân tích hệ thống và xây dựng cấu trúc dữ liệu :Trưởng nhóm
 - [x] 2. Chuẩn bị dữ liệu
   - [x] Lập sơ đồ địa điểm và ước lượng khoảng cách thực tế
   - [x] Tạo file graph.txt để lưu thông tin đồ thị
 - [ ] 3. Cài đặt chương trình
 - [ ] 4. Cài đặt giao diện
 - [ ] 5. Kiểm thử sản phẩm
-- [ ] 6. Làm báo cáo, slide, video
+  - [ ] 5.1 Kiểm thử thuật toán (White-box, boundary, negative)- Thành viên 3
+  - [ ] 5.2 Kiểm thử hiệu năng( Time, Space, Stress test) - Thành viên 4
+  - [ ] 5.3 Kiểm thử giao diện( Visual, Usability) -Thành viên 1
+- [ ] 6. Làm sản phẩm
+  - [ ] Báo cáo: Trưởng nhóm
+  - [ ] Slide: Thành viên 1
+  - [ ] Video: Thành viên 2 
 
 ## Contact
 For any inquiries or professtional feedback, please reach out to us:
