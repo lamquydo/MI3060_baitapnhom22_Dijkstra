@@ -3,7 +3,7 @@ Bài tập nhóm mô tả hệ thống dẫn đường trường học cho học
 
 ## Phạm vi hệ thống
 - Hệ thống tìm đường áp dụng cho Đại Học Bách Hà Nội
-- Đối tượng sử dụng: Sinh viên, giảng viên cảu trường và đối tượng có khả năng sử dụng công nghệ
+- Đối tượng sử dụng: Sinh viên, giảng viên của trường và đối tượng có khả năng sử dụng công nghệ
 
 ## Danh sách thành viên
 
@@ -21,10 +21,10 @@ Lê Thành Trung|202419004
 - Sử dụng thuật toán Dijkstra
 
 ## Danh sách nhiệm vụ cần làm
-- [ ] 1. Phân tích hệ thống( nhóm trưởng làm )
-- [ ] 2. Chuẩn bị dữ liệu
-  - [ ] Lập sơ đồ địa điểm và ước lượng khoảng cách thực tế
-  - [ ] Tạo file graph.txt để lưu thông tin đồ thị
+- [x] 1. Phân tích hệ thống và xây dựng cấu trúc dữ liệu
+- [x] 2. Chuẩn bị dữ liệu
+  - [x] Lập sơ đồ địa điểm và ước lượng khoảng cách thực tế
+  - [x] Tạo file graph.txt để lưu thông tin đồ thị
 - [ ] 3. Cài đặt chương trình
 - [ ] 4. Cài đặt giao diện
 - [ ] 5. Kiểm thử sản phẩm
