@@ -40,7 +40,7 @@ Lê Thành Trung|202419004
 - [ ] 6. Làm sản phẩm
   - [ ] Báo cáo: Trưởng nhóm
   - [ ] Slide: Thành viên 2
-  - [ ] Video: Thành viên 2
+  - [ ] Video: Thành viên 1
 
 ## Contact
 For any inquiries or professtional feedback, please reach out to us:
