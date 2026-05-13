@@ -26,7 +26,7 @@ Lê Thành Trung|202419004
   - [ ] Lập sơ đồ địa điểm và ước lượng khoảng cách thực tế
   - [ ] Tạo file graph.txt để lưu thông tin đồ thị
 - [ ] 3. Cài đặt chương trình
-  - [ ] 3.1 Xây dựng cấu trúc dữ liệu: Trưởng nhóm
+  - [ ] 3.1 Xây dựng cấu trúc dữ liệu: Thành viên 2
   - [ ] 3.2 Xây dựng module vào ra( loadData() và saveData() ): Thành viên 1
   - [ ] 3.3 Xây dựng modulde DijkstraSolver và đánh giá độ phức tạp: Thành viên 2
 - [ ] 4. Cài đặt giao diện : Thành viên 3
