@@ -1,6 +1,8 @@
 import heapq
 from dataclasses import dataclass
 
+from .graph import Graph
+
 @dataclass
 class DijkstraState:
     current_node: str
@@ -21,14 +23,22 @@ def trace_path(previous, start_id, end_id):
         curr = previous.get(curr)
     return path[::-1] if path[-1] == start_id else []
 
-def dijkstra_steps(graph, start_id, end_id):
+
+def dijkstra_steps(graph: Graph, start_id, end_id):
     """
-    Generator - yield từng bước để UI animate được theo image_fbe081.png
+    Generator - yield từng bước để UI animate được theo hustmap.png
     """
+    node_ids = list(graph.nodes.keys())
+
+    if start_id not in node_ids:
+        raise KeyError(f"Start node not found: {start_id}")
+    if end_id not in node_ids:
+        raise KeyError(f"End node not found: {end_id}")
+
     # 1. Khởi tạo các giá trị ban đầu
-    distances = {node: float('inf') for node in graph}
+    distances = {node: float("inf") for node in node_ids}
     distances[start_id] = 0
-    previous = {node: None for node in graph}
+    previous = {node: None for node in node_ids}
     visited = set()
     
     # Priority Queue chứa (khoảng cách, node_id)
@@ -38,11 +48,16 @@ def dijkstra_steps(graph, start_id, end_id):
         # Lấy node có khoảng cách nhỏ nhất
         current_dist, u = heapq.heappop(pq)
 
+        # Bỏ bản ghi cũ trong heap (đã có đường đi ngắn hơn được cập nhật trước đó).
+        if current_dist > distances[u]:
+            continue
+
         # Nếu node đã chốt (visited), bỏ qua
         if u in visited:
             continue
 
         # Yield bước ĐANG KHÁM PHÁ (exploring)
+        # Sao chép dữ liệu để UI đọc trạng thái tức thời mà không bị ảnh hưởng bởi bước sau.
         yield DijkstraState(
             current_node=u,
             visited=set(visited),
@@ -69,10 +84,17 @@ def dijkstra_steps(graph, start_id, end_id):
         visited.add(u)
 
         # Duyệt các hàng xóm v của u
-        for v, weight in graph.get(u, {}).items():
+        for v, weight in graph.get_neighbors(u).items():
             if v in visited:
                 continue
+
+            if v not in distances:
+                raise KeyError(f"Neighbor node not found in graph: {v}")
+
+            if weight < 0:
+                raise ValueError("Dijkstra does not support negative edge weights")
                 
+            # cập nhật khoảng cách tốt hơn và lưu đỉnh trước đó để truy vết đường đi.
             new_dist = distances[u] + weight
             if new_dist < distances[v]:
                 distances[v] = new_dist
