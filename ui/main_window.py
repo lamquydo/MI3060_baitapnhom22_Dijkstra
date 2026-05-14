@@ -8,16 +8,20 @@ from control_panel import ControlPanel
 
 class MainWindow(QWidget):
     def __init__(self):
+        # tạo main window
         super().__init__()
         self.setWindowTitle("HUST MAP")
         self.setFixedSize(1430, 910)
 
+        # tải ảnh map
         self.map_label = QLabel(self)
         self.map_label.setAlignment(Qt.AlignCenter)
         self.original_pixmap = QPixmap("data/maphust.png")
         
+        # tạo control panel
         self.control_panel = ControlPanel(self)
 
+        # chỉnh layout
         layout = QHBoxLayout()
         layout.setSpacing(0)
         layout.addWidget(self.map_label)
@@ -26,10 +30,6 @@ class MainWindow(QWidget):
         self.setLayout(layout)
 
         self.update_map_pixmap()
-
-    def resizeEvent(self, event):
-        self.update_map_pixmap()
-        super().resizeEvent(event)
 
     def update_map_pixmap(self):
         if self.original_pixmap.isNull():
