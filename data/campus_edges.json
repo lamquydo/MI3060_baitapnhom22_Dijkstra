@@ -1,0 +1,10 @@
+[
+  { "source": "cong_bac", "target": "c1", "weight": 70 },
+  { "source": "cong_parabol", "target": "c9", "weight": 220 },
+  { "source": "cong_parabol", "target": "d4", "weight": 300 },
+  { "source": "c1", "target": "c2", "weight": 160 },
+  { "source": "c1", "target": "c3", "weight": 170 },
+  { "source": "c1", "target": "ht", "weight": 150 },
+  { "source": "ht", "target": "cfc", "weight": 120 },
+  { "source": "c2", "target": "c9", "weight": 150 }
+]
