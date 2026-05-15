@@ -13,6 +13,7 @@ from PyQt5.QtWidgets import (
 )
 
 class ControlPanel(QWidget):
+    #tạo các signal lúc user click button
     run_clicked = pyqtSignal()
     clear_clicked = pyqtSignal()
     pause_clicked = pyqtSignal()
@@ -25,11 +26,13 @@ class ControlPanel(QWidget):
         self.setObjectName("controlPanel")
         self.setAttribute(Qt.WA_StyledBackground, True)
         self.setFixedWidth(280)
+
         self._build_ui()
         self._connect_signals()
         self._apply_styles()
         self._set_paused(False)
 
+    #tạo layout cho control panel
     def _build_ui(self):
         self.root_layout = QVBoxLayout(self)
         self.root_layout.setContentsMargins(0, 0, 0, 0)
@@ -188,7 +191,7 @@ class ControlPanel(QWidget):
         self.step_button.clicked.connect(self.step_clicked.emit)
         self.speed_slider.valueChanged.connect(self.speed_changed.emit)
 
-
+    # các hàm xử lí signal
     def _on_run_clicked(self):
         self._set_paused(False)
         self.run_clicked.emit()
@@ -210,6 +213,7 @@ class ControlPanel(QWidget):
         self.pause_button.setChecked(paused)
         self.continue_button.setChecked(not paused)
 
+    # chỉnh các thông số như màu, background,... của các button, text
     def _apply_styles(self):
         self.setStyleSheet(
             """
@@ -301,4 +305,6 @@ class ControlPanel(QWidget):
             }
             """
         )
+
+
 

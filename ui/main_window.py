@@ -29,7 +29,12 @@ class MainWindow(QWidget):
         layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(layout)
 
+        # scale map
         self.update_map_pixmap()
+    
+    def resizeEvent(self, event):
+        self.update_map_pixmap()
+        super().resizeEvent(event)
 
     def update_map_pixmap(self):
         if self.original_pixmap.isNull():
