@@ -28,7 +28,7 @@ Lê Thành Trung|202419004
 - [ ] 3. Cài đặt chương trình
   - [ ] 3.1 Xây dựng cấu trúc dữ liệu: Thành viên 2
   - [ ] 3.2 Xây dựng module vào ra( loadData() và saveData() ): Thành viên 1
-  - [ ] 3.3 Xây dựng modulde DijkstraSolver và đánh giá độ phức tạp: Thành viên 2
+  - [ ] 3.3 Xây dựng modulde DijkstraSolver: Thành viên 2
 - [ ] 4. Cài đặt giao diện : Thành viên 3
    - [ ] 4.1 Xây dựng module hiển thị giao diện 
    - [ ] 4.2 Xây dựng module nhận input từ các nút bấm 
@@ -38,7 +38,7 @@ Lê Thành Trung|202419004
   - [ ] 5.2 Kiểm thử hiệu năng( Time, Space, Stress test) 
   - [ ] 5.3 Kiểm thử giao diện( Visual, Usability)
 - [ ] 6. Làm sản phẩm
-  - [ ] Báo cáo: Trưởng nhóm
+  - [ ] Báo cáo và đánh giá độ phức tạp: Trưởng nhóm
   - [ ] Slide: Thành viên 2
   - [ ] Video: Thành viên 1
 
