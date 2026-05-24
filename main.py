@@ -2,7 +2,7 @@ import sys
 
 from PyQt5.QtWidgets import QApplication
 
-from src.core.campus_data import load_data
+from src.core.file_handler import load_data
 from src.ui.main_window import MainWindow
 
 
