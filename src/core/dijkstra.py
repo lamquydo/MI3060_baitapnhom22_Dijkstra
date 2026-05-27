@@ -1,4 +1,4 @@
-import heapq
+from .my_heapq import heappush, heappop
 from dataclasses import dataclass
 
 from .graph import Graph
@@ -44,7 +44,7 @@ def dijkstra_steps(graph: Graph, start_id, end_id):
 
     while pq:
         # Lấy node có khoảng cách nhỏ nhất
-        current_dist, u = heapq.heappop(pq)
+        current_dist, u = heappop(pq)
 
         # Bỏ bản ghi cũ trong heap (đã có đường đi ngắn hơn được cập nhật trước đó).
         if current_dist > distances[u]:
@@ -91,7 +91,7 @@ def dijkstra_steps(graph: Graph, start_id, end_id):
             if new_dist < distances[v]:
                 distances[v] = new_dist
                 previous[v] = u
-                heapq.heappush(pq, (new_dist, v))
+                heappush(pq, (new_dist, v))
                 
     # Nếu thoát khỏi vòng lặp mà không tìm thấy đích
     yield DijkstraState(
